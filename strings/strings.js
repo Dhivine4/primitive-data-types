@@ -209,9 +209,9 @@ let stringsAreEqualIgnoreCase = checkEqualityIgnoreCase1.toLowerCase() === check
 let replaceMe = "John just moved to Montreal. John will be meeting his roomate soon."
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
-let replaceName = "Michael";
-let replacedString = replaceName + " just moved to Montreal. " + replaceName + " will be meeting his roomate soon.";
-
+// let replaceName = "Michael";
+// let replacedString = replaceName + " just moved to Montreal. " + replaceName + " will be meeting his roomate soon.";
+let replacedString = replaceMe.replace(/John/g, "Michael");
 ////////////////////////////////////////////////////////////////////////
 
 
@@ -265,9 +265,9 @@ let targetString2 = "i am the second best, you are the first best!"
 //  Hint: There is more than one way to solve this - be creative!
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
-testString2 = testString2.replace("I am the first sentence.", "i am the second best,");
-testString2 = testString2.replace("You are the second sentence", "you are the first best!");
-
+// testString2 = testString2.replace("I am the first sentence.", "i am the second best,");
+// testString2 = testString2.replace("You are the second sentence", "you are the first best!");
+testString2 = testString2.replace("I am the first sentence.", "i am the second best,").replace("You are the second sentence", "you are the first best!");
 
 ////////////////////////////////////////////////////////////////////////
 

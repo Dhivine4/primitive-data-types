@@ -147,7 +147,7 @@ getFirstSevenCharacters = "You need my first seven characters"
 ###################### YOUR CODE BELOW THIS LINE #######################
 
 firstSevenCharacters = getFirstSevenCharacters[:7]
-
+# firstSevenCharacters = getFirstSevenCharacters[0:7]
 ########################################################################
 
 
