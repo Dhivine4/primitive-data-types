@@ -27,7 +27,7 @@ scoreToPass = 75
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-studentPasses = examScore1 >= scoreToPass or examScore2 >= scoreToPass
+studentPasses = (examScore1 >= scoreToPass) or (examScore2 >= scoreToPass)
 
 ########################################################################
 
