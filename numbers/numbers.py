@@ -6,7 +6,7 @@
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-newInteger = None
+newInteger = 1
 
 ########################################################################
 
@@ -20,7 +20,7 @@ newInteger = None
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-newFloat = None
+newFloat = 1.5
 
 ########################################################################
 
@@ -37,7 +37,7 @@ integer1 = "Not an integer"
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-integer1IsInteger = None
+integer1IsInteger = isinstance(integer1, int)
 
 ########################################################################
 
@@ -54,7 +54,7 @@ float1 = 45.6
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-float1IsFloat = None
+float1IsFloat = isinstance(float1, float)
 
 ########################################################################
 
@@ -70,7 +70,7 @@ getMyAbsoluteValue = -64.4
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-absoluteValue = None
+absoluteValue = abs(getMyAbsoluteValue)
 
 ########################################################################
 
@@ -88,8 +88,9 @@ roundMeUp = 85.4
 import math
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
-
-roundedUpNumber = None
+roundedUpNumber = math.ceil(roundMeUp)
+#  OR you can use the built-in round() function, but it will round to the
+# roundedUpNumber = round(roundMeUp)
 
 ########################################################################
 
@@ -107,7 +108,7 @@ roundMeDown = 85.4
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-roundedDownNumber = None
+roundedDownNumber = math.floor(roundMeDown)
 
 ########################################################################
 
@@ -124,8 +125,8 @@ powerNumber = 5
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-baseToThePower = None
-
+baseToThePower = baseNumber ** powerNumber
+# baseToThePower = pow(baseNumber, powerNumber)
 ########################################################################
 
 
@@ -141,7 +142,7 @@ maxValue = 35
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-scorePercentage = None
+scorePercentage = round(((scoreValue / maxValue) * 100), 3)
 
 ########################################################################
 
@@ -158,8 +159,8 @@ score = 145
 #
 ###################### YOUR CODE BELOW THIS LINE ######################
 
-scoreMessage = None
-
+scoreMessage = messagePrefix + " " + str(score)
+# scoreMessage = f"{messagePrefix} {score}"
 ########################################################################
 
 
@@ -177,7 +178,7 @@ import re
 #
 ###################### YOUR CODE BELOW THIS LINE ######################
 
-parsedNumber = None
+parsedNumber = float(re.search(r"\d+\.?\d*", parseTheNumber).group())
 
 ########################################################################
 
